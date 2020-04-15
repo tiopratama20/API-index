@@ -154,10 +154,10 @@ function isi_desc(id_mov){
                     }
                 }
 
-            $('.modal-title').append("<h1>"+desc_mov['name']+"</h1>");
+            $('.modal-title').html("<h1>"+desc_mov['name']+"</h1>");
 
-           $('.modal-body').append(
-            "<img class='img-modal' id='img-modal' align='left' src="+images+"><img>"+
+           $('.modal-body').html(
+            "<div class='box-img'><img class='img-modal' id='img-modal' align='left' src="+images+"><img></div>"+
             "<div class='desc' style='padding-left: 399px;'>"+
             "<h3>"+desc_mov['name']+"</h3>"+
             "<p>"+schedule_days+"<br/>"+schedule_time+"</p>"+
